@@ -41,8 +41,8 @@
             const numero = "+573044469689"; // Número en formato internacional (sin el signo +)
             const mensaje = "Dale, yo invito"; // Mensaje a enviar
             const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-            window.open(url, "_blank");
-        }, 5000);  // Después de 5 segundos
+            window.location.href = url;
+                }, 5000);  // Después de 5 segundos
     </script>
 </body>
 </html>
