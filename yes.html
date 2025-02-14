@@ -34,6 +34,15 @@
 
         // Crear corazones cada 300ms
         setInterval(createHeart, 300);
+
+        // Enviar mensaje a WhatsApp después de 5 segundos
+        setTimeout(function() {
+            // Aquí coloca el número y el mensaje
+            const numero = "+573044469689"; // Número en formato internacional (sin el signo +)
+            const mensaje = "Dale, yo invito"; // Mensaje a enviar
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, "_blank");
+        }, 5000);  // Después de 5 segundos
     </script>
 </body>
 </html>
